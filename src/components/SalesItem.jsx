@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   BadgeDelta,
   Button,
@@ -63,7 +63,7 @@ const SalesItem = () => {
     const [ selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <Card max-w-full mx-auto mt-2>
+    <Card max-w-full mx-auto>
         <Flex className="flex-col space-x-8 lg:flex-row">
             <Title>Overview</Title>
             <TabGroup index={selectedIndex} onIndexChange={setSelectedIndex}>
